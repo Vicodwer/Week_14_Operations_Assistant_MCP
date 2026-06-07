@@ -4,24 +4,10 @@ A multi-agent operations assistant built with **CrewAI** and a custom **MCP serv
 Given a business question, a crew of two agents searches company documents and order
 records, then writes a sourced report where every claim names the document it came from.
 
-## Architecture
-Question (order ID)
-↓
-crew_runner.py  ──  opens MCPAdapt context
-↓
-MCP Server (mcp_server/server.py)  via stdio
-├── search_documents(query)   → keyword search across 10 .txt documents
-├── read_record(order_id)     → order row from orders.csv
-└── save_report(title, body)  → writes markdown to outputs/
-↑
-MCPAdapt + CrewAIAdapter  (bridges MCP ↔ CrewAI)
-↑
-CrewAI Crew (sequential)
-├── Research Analyst  →  calls search_documents + read_record
-└── Report Writer     →  produces sourced markdown text
-↓
-crew_runner.py  →  human approval gate  →  save_report()  →  outputs/report.md
-→  traces/trace.json
+## System Architecture
+
+![System Architecture Code](./data/docs/architecture.png)
+
 
 ## Features
 
@@ -229,3 +215,10 @@ See `decision_log.md` for the full log.
 - [CrewAI docs](https://docs.crewai.com)
 - [CrewAI + MCP walkthrough](https://docs.crewai.com/en/mcp/overview)
 - [Ollama](https://ollama.com)
+
+## Demo
+
+📹 **5-minute walkthrough:** https://www.loom.com/share/89d7b35e104b4e4cae3a3a3b100b8fcb
+
+Covers: what was built, a live crew run with tool calls, one real decision,
+one real failure and fix, security lesson (prompt injection), and next steps.
