@@ -1,0 +1,5 @@
+Ticket ID: T001
+
+Customer reported delayed shipment for order ORD1005.
+Investigation found inventory shortage caused the delay.
+Customer was informed via email.

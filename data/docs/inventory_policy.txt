@@ -1,0 +1,2 @@
+Products with stock below 10 units are considered low inventory.
+Restocking requests are automatically generated when inventory falls below threshold.

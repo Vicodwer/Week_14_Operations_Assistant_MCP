@@ -1,0 +1,11 @@
+order_id,customer,product,status,inventory_issue
+ORD1001,Alice,Wireless Headphones,Delivered,No
+ORD1002,Bob,Mechanical Keyboard,Shipped,No
+ORD1003,Charlie,Wireless Headphones,Delivered,No
+ORD1004,David,Mechanical Keyboard,Processing,No
+ORD1005,Eva,Wireless Headphones,Delayed,Yes
+ORD1006,Frank,Mechanical Keyboard,Delivered,No
+ORD1007,Grace,Wireless Headphones,Shipped,No
+ORD1008,Helen,Mechanical Keyboard,Delivered,No
+ORD1009,Ian,Wireless Headphones,Processing,No
+ORD1010,Jane,Mechanical Keyboard,Delivered,No

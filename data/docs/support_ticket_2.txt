@@ -1,0 +1,4 @@
+Ticket ID: T002
+
+Customer requested refund for damaged item.
+Refund approved according to return policy.
